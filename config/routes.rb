@@ -3,9 +3,7 @@ Rails.application.routes.draw do
   root 'home#index'
 
 
-  # get 'projects/index'
-  # get 'projects/new'
-  # get 'projects/delete'
+
   resources :projects
   devise_for :users
   get 'persons/profile'

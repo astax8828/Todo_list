@@ -1,4 +1,11 @@
 <h1>Projects#index</h1>
 <p>Find me in app/views/projects/index.html.erb</p>
 
-<%= link_to 'Новый проект',  new_project_path %>
+
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Запустить модальное окно
+</button>
+
+
+<%= render 'projects/form_new_project' %>
