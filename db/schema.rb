@@ -13,13 +13,13 @@
 ActiveRecord::Schema.define(version: 2019_05_06_120726) do
 
   create_table "projects", force: :cascade do |t|
-    t.integer "creator_name_id"
+    t.integer "user_id"
     t.string "name_project"
-    t.datetime "project_start_date"
+    t.string "project_start_date"
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["creator_name_id"], name: "index_projects_on_creator_name_id"
+    t.index ["user_id"], name: "index_projects_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
